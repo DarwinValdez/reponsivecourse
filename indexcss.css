@@ -55,12 +55,55 @@ header a:hover{
   background-color: rgb(63, 63, 63);
   cursor: pointer;
 }
-h2{
+
+.form-inc{
+padding: 1px;
+
+
+}
+.input-inc{
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgb(53, 53, 53); 
+  position: relative;
+  top: -1em;
+  left: 1em;
+  text-align: center;
+  color: white;
+  padding: 8px;
+
+}
+
+.input-inc::placeholder{
+  color: white;
+}
+
+.input-wrapper {
+	position: absolute;
+	width: 271px;
+}
+
+.input-icon {
+  
+	color: #ffffff;
+	position: relative;
+	width: 20px;
+	height: 20px;
+  top: 0.1em;
+  left: -80%;
+	transform: translateY(-50%);
+}
+
+
+
+.box-act{
+  background-color: var(--background-color-1);
+}
+.box-act h2{
   color: white;
   text-align: center;
   font-weight: 200;
   font-size: 1.3em;
-  background-color: var(--background-color-1);
 }
 .box-inc-card{
   padding: 20px;
@@ -112,4 +155,26 @@ h2{
   background-color: rgb(65, 65, 65);
   color: white;
   text-align: center;
+}
+
+@media (min-width:750px){ 
+
+ 
+  header .container{
+    flex-direction: row;
+  }
+
+
+  header nav{
+    position: relative;
+    left: 15%;
+    padding: 0;
+    
+
+  }
+
+  .input-inc{
+    position: static;
+    padding: 8px 130px;
+  }
 }
